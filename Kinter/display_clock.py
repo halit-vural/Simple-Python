@@ -24,6 +24,4 @@ dateLabel.pack()
 
 myTime()
 
-    
-
 myWin.mainloop()
