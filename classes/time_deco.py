@@ -19,8 +19,7 @@ def timer(func):
         value = func(*args, **kwargs)
         end_time = time.perf_counter()
         run_time = end_time - start_time
-        print(f'Finished {func.__name__!r} in {run_time:.4f} secs')
-        '''by using !r, repr(object).__format__() is used >> ref1'''
+        print(f'Finished {func.__name__!r} in {run_time:.4f} secs') #  >> ref1
         return value
     return wrap_it
 
@@ -34,4 +33,5 @@ waste_some_time(100)
 waste_some_time(1000)
 
 
-'''ref1: https://stackoverflow.com/questions/33097143/what-is-the-difference-between-r-and-r-in-python'''
+'''by using !r, repr(object).__format__() is used
+ref1: https://stackoverflow.com/questions/33097143/what-is-the-difference-between-r-and-r-in-python'''
