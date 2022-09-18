@@ -1,3 +1,4 @@
+''' Example to see the difference between instance and the class'''
 class Warehouse:
     purpose = 'storage'
     region = 'west'
