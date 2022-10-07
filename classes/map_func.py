@@ -12,3 +12,9 @@ print(area)
 
 # rect_area = list(map(lambda x, y: x * y, ( row[1] for row in rectangles)))
 # print(rect_area)
+
+
+name = 'laptop'
+nameTwo = 'laptop'
+
+print(name==nameTwo)
